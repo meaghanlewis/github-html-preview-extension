@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub HTML Preview Link",
+  "version": "1.0",
+  "description": "Adds a preview link for HTML files in GitHub pull requests.",
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*/*/pull/*/files"],
+      "js": ["content.js"]
+    }
+  ]
+}
